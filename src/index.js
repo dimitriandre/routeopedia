@@ -23,11 +23,16 @@ root.render(
           path="/cryptodetail/:cryptoSymbol/:id"
           element={<CryptoDetail />}
         ></Route>
+        <Route
+          path="/cryptodetail/:cryptoSymbol"
+          element={<CryptoDetail />}
+        ></Route>
         <Route path="product">
           <Route path="" element={<Product />}></Route>
           <Route path="create" element={<CreateProduct />}></Route>
           <Route path="list" element={<ProductList />}></Route>
           <Route path="details" element={<ProductDetails />}></Route>
+          <Route path="details/:id" element={<ProductDetails />}></Route>
         </Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
