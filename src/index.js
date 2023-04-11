@@ -8,6 +8,7 @@ import CreateProduct from "./Pages/CreateProduct";
 import Product from "./Pages/Product";
 import ProductList from "./Pages/ProductList";
 import ProductDetails from "./Pages/ProductDetails";
+import NotFound from "./NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
           <Route path="list" element={<ProductList />}></Route>
           <Route path="details" element={<ProductDetails />}></Route>
         </Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
